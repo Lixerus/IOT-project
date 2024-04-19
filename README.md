@@ -17,4 +17,4 @@ Web client is connected to the microcontroller through local wifi network and us
 Client can activate or deactivate cooler or enable automatic mode with target temperature.
 _______________________
 ## Preview
-
+![iot-preview](https://github.com/Lixerus/IOT-project/assets/61562096/6cbc556b-4cdb-4d03-b490-a85dc5c83e4d)
