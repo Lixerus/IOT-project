@@ -4,13 +4,13 @@ import AutoPanel from "./AutoPanel";
 import ManualPanel from "./ManualPanel";
 import RtGraph from "./RtGraph";
 import MyInputField from "./MyInputField";
-
+const HOST = "******"
 const ControlPanel = () => {
     const [panelState, setPanelState] = useState("auto")
-    const [critTemp, setCritTemp] = useState('')
+    const [critTemp, setCritTemp] = useState(40)
     const [tempData, setTempData] = useState([])
     const [xAxisTime, setXAxisTime] = useState([])
-    const socketUrl = "ws://192.168.0.104:81"
+    const socketUrl = `ws://${HOST}:81`
     const { sendMessage, lastMessage, readyState } = useWebSocket(socketUrl,{
         share: true,
         shouldReconnect: () => true,

@@ -20,7 +20,7 @@ const ManualPanel = ({panelState, changePanelState, sendData, wsState, wsSend}) 
 
     return (
     <div className={`col-6 d-flex flex-column justify-content-center align-items-center border border-primary ${panelStyle}`}>
-        <button className={`btn btn-primary btn-lg w-50 m-4 p-5 ${panelState === "manual" ? "disabled" : null}`} onClick={()=>mainBtnSend('m')}>Ручной</button>
+        <button className={`btn btn-primary btn-lg w-50 m-4 p-4 ${panelState === "manual" ? "disabled" : null}`} onClick={()=>mainBtnSend('m')}>Ручной</button>
         <button className={`btn btn-secondary btn-lg w-50 mt-4 ${panelState === "manual" ? null : "disabled"}`} onClick={() => onSend(coolerState === 'On' ? 'f' : 'n')}>{coolerState}</button>
         <p className="fs-5 text-center m-2">{`Охлаждение ${coolerState === "On" ? "включено" : "выключено"}`}</p>
     </div>
